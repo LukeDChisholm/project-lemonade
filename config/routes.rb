@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get '/', to: 'stores#index'
+  resources :stores
   get 'stores/index'
   get 'stores/show'
   get 'stores/new'

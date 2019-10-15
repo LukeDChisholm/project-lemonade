@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+test_stores = ['stickers', 'guns']
+
+test_stores.each do |product|
+  Store.create( product: product)
+end

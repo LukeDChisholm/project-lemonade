@@ -1,2 +1,5 @@
-<h1>Hello World!</h1>
-<p>Find me in app/views/stores/index.html.erb</p>
+<h1>Stores</h1>
+<% @stores.each do |store| %>
+<p>Product: <%= link_to "Product", store_path(store) %></p>
+
+<% end %>
