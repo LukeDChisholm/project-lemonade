@@ -12,9 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2019_10_15_021303) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "stores", force: :cascade do |t|
     t.string "product"
     t.datetime "created_at", null: false
